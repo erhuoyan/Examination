@@ -1,0 +1,745 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="国家地理,国家地理中文网,美国国家地理,美国国家地理中文网,地理杂志,每日新闻,每日一图,华夏地理,摄影大赛,地理,国家地理视频,图片,摄影,动物,环境,旅行,探险,装备,杂志,科技新知">
+	<meta name="description" content="美国国家地理中文网是由《华夏地理》杂志与美国国家地理版权合作的科技人文线上平台，美国国家地理中文网囊括了生物与环境、历史与文化、旅游与探险等众多极具特色的专题栏目，将以影像和视频的呈现方式，倚靠雄厚的科技人文资源，深度发掘全球文化，在多元化的差异中展现真实的人文底蕴。美国国家地理中文网力求为您带来每日最新、最鲜活的人文与科学资讯。">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+	<meta http-equiv="x-ua-compatible" content="IE=edge" >
+	<title>国家地理中文网</title>	
+	<link rel="stylesheet" type="text/css" href="/statics/css/template2017/sections.css">
+	<link rel="stylesheet" type="text/css" href="/statics/css/template2017/header_footer.css">
+	<script language="JavaScript" src="/statics/js/template2017/jquery-1.11.1.min.js"></script>
+	<script language="JavaScript" src="/statics/js/template2017/sea.2.1.0.js"></script>
+	<script language="JavaScript" src="/statics/js/template2017/rem.js"></script>
+	<script type="text/javascript">
+		function loginshow()
+		{
+			$.get('/index.php?m=member&c=ajaxlogin&a=login', function(msg){
+                if(msg.success==1){
+                	$('#logined_username_nologin').hide();
+                	$('#logined_username').show();
+                    $('#logined_username').html(msg.username);
+                    if(msg.nickname){$('#logined_username').html('('+msg.nickname+')');}
+                    if(msg.message_count>0){
+                    	if(msg.message_count>99){
+	                    	$('.mess_num').html('99+');
+	                    }else{
+	                    	$('.mess_num').html(msg.message_count);
+	                    }
+                    }
+                }     
+		    },"json");
+		}
+		
+		$(function(){
+		   loginshow();
+		});
+	</script>
+</head>
+<body>
+	<div class="header js_header">
+		<div class="user_con">
+			<ul class="user_act">
+				<li><a href="javascript:;" class="wx s_wx">微信<img class="QR_code" title="QR code" src="/statics/images/ewm.jpg"/></a></li>
+				<li><a href="https://weibo.com/geochannel" style="color:#FFF">微博</a></li>
+				<li><a href="https://weidian.com/?userid=984434868" style="color:#FFF">微店</a></li>
+				<li><a id="logined_username_nologin" href="http://www.nationalgeographic.com.cn/index.php?m=member&c=index&a=login" style="color:#FFF">登录</a><a href="javascript:void(0);" class="login" id="logined_username" style="display:none;">登录</a></li>
+			</ul>
+			<div class="user_nav_wrapper" style="display:none;">
+				<ul>
+					 <!--li><a href="###">我的关注</a></li-->
+					 <li><a href="http://www.nationalgeographic.com.cn/index.php?m=message&c=index&a=group">我的消息<span class="mess_num"></span></a></li>
+					 <li><a href="http://www.nationalgeographic.com.cn/index.php?m=member&c=index">我的资料</a></li>
+					 <li><a href="http://www.nationalgeographic.com.cn/index.php?m=content&c=index&a=favorite_list">我的收藏</a></li>
+					 <li><a href="http://www.nationalgeographic.com.cn/index.php?m=content&c=index&a=yourshot">我的作品</a></li>
+					 <li><a class="logout" href="http://www.nationalgeographic.com.cn/index.php?m=member&c=index&a=logout">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu_btn_wrapper cf">
+			<h1 class="logo"><a href="http://www.nationalgeographic.com.cn/"><img src="/statics/images/template2017/logo.png"/></a></h1>
+			<div class="s_category"><!--a href="/index.php?m=content&c=index&a=lists&catid=526">YOU SHOT</a--><a href="/photography/photocontest/2017">摄影大赛</a><a href="http://www.nationalgeographic.com.cn/events/" class="br">活动</a></div>
+			<div class="menu_btn_list">
+				<a class="btn_search" href="#">搜索</a>
+				<a class="btn_menu js_btn_menu" href="javascript:;">menu</a>
+			</div>
+		</div>
+	</div>	
+	<div class="menu_con js_menu_con cf" style="display:none;">
+		<div class="menu_imgs" style="display:block;">
+												<div class="photo_story_up">
+				<a href="/photography/picture_story/5118.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0122/20180122042251164.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">图片故事</span>
+					<a href="/photography/picture_story/5118.html"><h2>黑龙江伊春｜这颗镶嵌在小兴安岭里的明珠熠熠发着光</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/photography/picture_story/5116.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0122/20180122120753804.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">图片故事</span>
+							<a href="/photography/picture_story/5116.html"><h2>新德里雾霾爆表！普通民众安之若素</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/photography/picture_story/5115.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0122/20180122102058707.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">图片故事</span>
+							<a href="/photography/picture_story/5115.html"><h2>岩石上的花开：世界岩凿建筑一览</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/photography/picture_story/5109.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0118/20180118124326995.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">图片故事</span>
+							<a href="/photography/picture_story/5109.html"><h2>影像记录｜日渐没落的传统泥地摔跤</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/photography/picture_story/5106.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0116/20180116112407593.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">图片故事</span>
+							<a href="/photography/picture_story/5106.html"><h2>激动人心！火星地表浅层储存大量水冰</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		<div class="menu_imgs">
+												<div class="photo_story_up">
+				<a href="/video/sciences/8386.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0122/20180122035438691.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">精选</span>
+					<a href="/video/sciences/8386.html"><h2>考古新发现：秘鲁莫切文明的蛛丝马迹</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/science/science/8375.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0118/20180118040311659.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">精选</span>
+							<a href="/science/science/8375.html"><h2>科学家研发出新型人造肌肉，廉价而强韧</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/animals/facts/8371.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0117/20180117022633730.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">精选</span>
+							<a href="/animals/facts/8371.html"><h2>北极狐与雪鸮共舞——背后另有隐情？</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/video/space/8365.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0115/20180115024334826.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">精选</span>
+							<a href="/video/space/8365.html"><h2>超新星爆炸遗迹的可视化</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/video/environment/8361.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0112/20180112025424524.png"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">精选</span>
+							<a href="/video/environment/8361.html"><h2>撒哈拉沙漠下雪啦</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		<div class="menu_imgs">
+												<div class="photo_story_up">
+				<a href="/animals/facts/8384.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0122/20180122105741158.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">知识速递</span>
+					<a href="/animals/facts/8384.html"><h2>除了变色它还能发光——你见过荧光色的变色龙吗</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/animals/facts/8379.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0119/20180119012419342.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">知识速递</span>
+							<a href="/animals/facts/8379.html"><h2>关于鸡的秘密：这个时代，鸡都看脸</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/animals/facts/8374.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0118/20180118095619273.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">知识速递</span>
+							<a href="/animals/facts/8374.html"><h2>萌化了！马达加斯加发现新狐猴物种</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/animals/facts/8371.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0117/20180117022633730.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">知识速递</span>
+							<a href="/animals/facts/8371.html"><h2>北极狐与雪鸮共舞——背后另有隐情？</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/animals/facts/8366.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0115/20180115041657469.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">知识速递</span>
+							<a href="/animals/facts/8366.html"><h2>你们真的是蜘蛛吗：最新发表描述的18种...</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		<div class="menu_imgs">
+												<div class="photo_story_up">
+				<a href="/culture/8378.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0119/20180119110701909.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">考古发现</span>
+					<a href="/culture/8378.html"><h2>老鼠可能是无辜的：黑死病的元凶也许并不是它</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/science/science/8375.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0118/20180118040311659.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">科技新知</span>
+							<a href="/science/science/8375.html"><h2>科学家研发出新型人造肌肉，廉价而强韧</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/science/archaeology/8369.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0116/20180116040010618.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">考古发现</span>
+							<a href="/science/archaeology/8369.html"><h2>在中国发现的巨嵴彩虹龙可能如蜂鸟一般靓丽</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/science/archaeology/8363.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0115/20180115121651366.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">考古发现</span>
+							<a href="/science/archaeology/8363.html"><h2>奏响1700年前的口琴，听见风里的声音</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/science/space/8358.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0112/20180112010618774.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">宇宙空间</span>
+							<a href="/science/space/8358.html"><h2>科学家们推测土星环可能相当年轻</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		<div class="menu_imgs">
+												<div class="photo_story_up">
+				<a href="/travel/destinations/8381.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0119/20180119040725813.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">目的地</span>
+					<a href="/travel/destinations/8381.html"><h2>是他们创造了这个“世界”，哈尔滨冰雪大世界诞生记！</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/culture/8377.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0119/20180119100916898.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">目的地</span>
+							<a href="/culture/8377.html"><h2>假面舞会开始啦！手把手带你玩转威尼斯...</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/travel/destinations/8368.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0116/20180116035031442.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">目的地</span>
+							<a href="/travel/destinations/8368.html"><h2>雪舞北疆 | 无论这个冬天还是这辈子，...</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/travel/destinations/8357.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0111/20180111051646403.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">目的地</span>
+							<a href="/travel/destinations/8357.html"><h2>甘肃白银｜丝绸之路横跨黄河的美丽传说</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/travel/destinations/8345.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0104/20180104045252573.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">目的地</span>
+							<a href="/travel/destinations/8345.html"><h2>马耳他 | 这座&ldquo;欧洲的后花园&rdquo;生来就...</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		<div class="menu_imgs">
+												<div class="photo_story_up">
+				<a href="/environment/8350.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0108/20180108112705248.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">环境保护</span>
+					<a href="/environment/8350.html"><h2>记录珊瑚繁殖全过程：大堡礁的“水下暴风雪”</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/environment/8320.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2017/1227/20171227030618684.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">环境保护</span>
+							<a href="/environment/8320.html"><h2>140国协商中：关于公海的保护条例</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/environment/8305.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2017/1221/20171221102846417.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">环境保护</span>
+							<a href="/environment/8305.html"><h2>全球首创的“帕劳誓词”：一切为了生态</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/environment/8296.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2017/1218/20171218024634518.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">环境保护</span>
+							<a href="/environment/8296.html"><h2>珊瑚大面积死亡，精子冷冻或能复兴珊瑚种群</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/environment/8286.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2017/1213/20171213032553845.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">环境保护</span>
+							<a href="/environment/8286.html"><h2>37国协议：北极公海将禁渔16年</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		<div class="menu_imgs">
+												<div class="photo_story_up">
+				<a href="/culture/8378.html">
+					<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0119/20180119110701909.jpg" width="968px" />
+				</a>
+				<div class="title">
+					<span class="ico_line">人文</span>
+					<a href="/culture/8378.html"><h2>老鼠可能是无辜的：黑死病的元凶也许并不是它</h2></a>
+				</div>
+			</div>
+																																	
+			<div class="photo_story_down">
+				<ul class="cf">
+																									<li>
+						<a href="/culture/8377.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0119/20180119100916898.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">人文</span>
+							<a href="/culture/8377.html"><h2>假面舞会开始啦！手把手带你玩转威尼斯...</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/culture/8356.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0111/20180111040453770.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">人文</span>
+							<a href="/culture/8356.html"><h2>20平米，装满一名普通皮匠最热忱的&ldquo;匠...</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/culture/8349.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2018/0105/20180105054045544.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">人文</span>
+							<a href="/culture/8349.html"><h2>南疆 | 穿越千年的老茶馆，比茶香更馥...</h2></a>
+						</div>
+					</li>
+																				<li>
+						<a href="/culture/8322.html">
+							<img title="photo story" src="http://image.nationalgeographic.com.cn/2017/1227/20171227035457970.jpg"  width="469px" />
+						</a>
+						<div class="title">
+							<span class="ico_line">人文</span>
+							<a href="/culture/8322.html"><h2>自然之美 V.S. 人为之美：孰强孰弱</h2></a>
+						</div>
+					</li>
+														</ul>
+			</div>
+		</div>
+		
+		<div class="menu_list js_menu_list">
+			<div class="nav_btns cf">
+				<a class="btn_search" href="#">搜索</a>
+				<a class="btn_close js_btn_close" href="#">X</a>
+			</div>
+			<div class="nav_categories">
+				<ul>
+					<li class="nav_photography">
+						<a href="http://www.nationalgeographic.com.cn/photography/">
+							<span>摄影</span>			
+							<p class="focus"></p>
+						</a>
+					</li>
+					<li class="nav_video">
+						<a href="http://www.nationalgeographic.com.cn/video/">
+							<span>视频</span>		
+							<p class="focus"></p>
+						</a>
+					</li>
+					<li class="nav_animals">
+						<a href="http://www.nationalgeographic.com.cn/animals/">
+							<span>动物</span>						
+							<p class="focus"></p>
+						</a>
+					</li>
+					<li class="nav_science">
+						<a href="http://www.nationalgeographic.com.cn/science/">
+							<span>科技</span>						
+							<p class="focus"></p>
+						</a>
+					</li>
+					<li class="nav_travel">
+						<a href="http://www.nationalgeographic.com.cn/travel/">
+							<span>旅行</span>						
+							<p class="focus"></p>
+						</a>
+					</li>
+					<li class="nav_environment">
+						<a href="http://www.nationalgeographic.com.cn/environment/">
+							<span>环境</span>						
+							<p class="focus"></p>
+						</a>
+					</li>
+					<li class="nav_culture">
+						<a href="http://www.nationalgeographic.com.cn/culture/">
+							<span>人文</span>						
+							<p class="focus"></p>
+						</a>
+					</li>
+				
+				</ul>
+			</div>
+			<div class="nav_social cf">				
+				<!--a class="nav_wx" href="#"></a-->
+				<a class="nav_wb" href="https://weibo.com/geochannel"></a>
+				<a class="nav_sd" href="https://weidian.com/?userid=984434868"></a>	
+			</div>
+		</div>
+	</div>
+	<div class="search_wrapper js_search_wrapper" style="display:none;">
+		<div class="search_con">
+			<a class="btn_close" href="javascript:;">X</a>
+			<div class="search_form">
+				<form action="http://www.nationalgeographic.com.cn/index.php" method="get" target="_blank" id="subform">
+					<input class="gSearch_text" name="q" id="q" type="text"  placeholder="搜索">
+					<input type="hidden" name="m" value="search"/>
+		          	<input type="hidden" name="c" value="index"/>
+		          	<input type="hidden" name="a" value="init"/>
+		          	<input type="hidden" name="typeid" value="0" id="typeid"/>
+		          	<input type="hidden" name="siteid" value="1" id="siteid"/>
+					<i></i>
+					<!-- span style="display: block;">搜索</span-->
+				</form>
+			</div>
+		</div>
+	</div>	<link rel="stylesheet" type="text/css" href="/statics/css/template2017/index.css">
+	<div class="content js_content">		
+		<div class="sec_hot add_pad_b" style="margin-top:0;">
+			<div class="con cf">
+				<div class="hot_textList">
+					<h2 class="title"><i class="ico"></i><span>最新资讯</span></h2>					
+					<div class="list">
+						 
+     					     					     					<div class="reco_o">
+							<a href="/photography/picture_story/5118.html" target="_blank">
+								<h3>黑龙江伊春｜这颗镶嵌在小兴安岭里的明珠熠熠发着光</h3>
+								<img src="http://image.nationalgeographic.com.cn/2018/0122/20180122042251164.jpg"/>
+							</a>
+						</div>
+												
+						     											<div  class="reco_t">
+							<p><span>科学</span></p>
+							<a href="/video/sciences/8386.html" target="_blank"><h3>考古新发现：秘鲁莫切文明的蛛丝马迹</h3></a>
+							<i class="ico_line"></i>
+						</div>
+												
+						     											<div  class="reco_t">
+							<p><span>图片故事</span></p>
+							<a href="/photography/picture_story/5116.html" target="_blank"><h3>新德里雾霾爆表！普通民众安之若素</h3></a>
+							<i class="ico_line"></i>
+						</div>
+												
+						     											<div  class="reco_t">
+							<p><span>知识速递</span></p>
+							<a href="/animals/facts/8384.html" target="_blank"><h3>除了变色它还能发光——你见过荧光色的变色龙吗</h3></a>
+							<i class="ico_line"></i>
+						</div>
+												
+																	</div>
+				</div>
+				<div class="hot_imgList">
+					<h2 class="title"><span></span></h2>	
+					<div class="video">
+						<div class="yx-rotaion">
+						<ul class="rotaion_list">
+<li><a href="http://www.nationalgeographic.com.cn/animals/photo/5097.html" target="_blank"><img src="http://image.nationalgeographic.com.cn/2018/0122/20180122025843786.jpg" alt="羽翼的天路——飞鸟掠过长空留下踪迹"/></a></li>
+<li><a href="http://www.nationalgeographic.com.cn/html/rockroad/" target="_blank"><img src="http://image.nationalgeographic.com.cn/2018/0102/20180102115932118.jpg" alt="寻路天下--重走洛克之路"/></a></li>
+<li><a href="https://weidian.com/?userid=984434868&spider_token=eac3&spider=seller.itemdetail.item_seller.1" target="_blank"><img src="http://image.nationalgeographic.com.cn/2018/0117/20180117040447998.jpg" alt="美国国家地理大陆官方微店"/></a></li>
+<li><a href="http://www.nationalgeographic.com.cn/photography/picture_story/5093.html" target="_blank"><img src="http://image.nationalgeographic.com.cn/2018/0122/20180122030259578.jpg" alt="传奇海盗黑胡子生前的一本书"/></a></li>
+<li><a href="http://www.nationalgeographic.com.cn/photography/picture_story/5115.html" target="_blank"><img src="http://image.nationalgeographic.com.cn/2018/0122/20180122030549128.jpg" alt="岩石上的花开：世界岩凿建筑一览"/></a></li>
+</ul>						</div>
+					</div>
+					<div class="imgs cf">
+<div><a href="http://www.nationalgeographic.com.cn/travel/destinations/8332.html"><img src="http://image.nationalgeographic.com.cn/2018/0102/20180102124745653.jpg" /></a>
+<p><span>下一站目的地</span></p>
+<h3><a href="http://www.nationalgeographic.com.cn/travel/destinations/8332.html">2018年，我们觉得你应该去这些地方</a></h3>
+</div>
+<div><a href="http://www.nationalgeographic.com.cn/animals/facts/8343.html"><img src="http://image.nationalgeographic.com.cn/2018/0104/20180104121256992.jpg" /></a>
+<p><span>知识速递</span></p>
+<h3><a href="http://www.nationalgeographic.com.cn/animals/facts/8343.html">世界最高龄野鸟&ldquo;产妇&rdquo;&mdash;&mdash;67岁再当妈</a></h3>
+</div>
+</div>
+<br />				</div>
+			</div>
+		</div>
+		<div class="sec_videos del_mar_t" id="sec_videos">
+			<h2 class="title"><i class="ico"></i><span>今日视频</span></h2>
+			<div class="con cf">
+				<div class="video_wrapper">				
+					<iframe id="video_frame" frameborder="0" src="" allowfullscreen=""></iframe>	
+				</div>
+				<div  class="video_list" id="video_list">
+					<div class="scrollbar" style="height: 200px;display: none;">
+						<div class="track" style="height: 200px;">
+						  <div class="thumb" style="top: 69.4444px; height: 69.4444px;">
+							<div class="end"></div>
+						  </div>
+						</div>
+					</div>
+					<div class="viewport">
+						<ul class="overview">	
+							<li class="hoverEffect">
+	<img src="http://image.nationalgeographic.com.cn/2017/1228/20171228042314226.jpg" width="312" height="173"/>							
+	<a class="hoverEffect_link" href="javascript:;" data-url="https://v.miaopai.com/iframe?scid=pmj32jcD~SpOS0qxvhehTqk28zOkK6absiQgdQ__" data-description="“童话国王”建造了一座令人倾倒的宫殿，也留下一段神秘的历史。" data-href="https://v.miaopai.com/iframe?scid=pmj32jcD~SpOS0qxvhehTqk28zOkK6absiQgdQ__">
+		<div class="shawdow"></div>
+		<div class="video_con cf">
+			<span class="video_btn"></span>
+			<div class="video_info">
+				<h3>现实中的童话王国——新天鹅堡</h3>
+			</div>
+		</div>
+	</a>
+</li>		
+<li class="hoverEffect">
+	<img src="http://image.nationalgeographic.com.cn/2017/1226/20171226103423492.jpg" width="312" height="173"/>							
+	<a class="hoverEffect_link" href="javascript:;" data-url="https://v.qq.com/iframe/player.html?vid=e0512o01mic&tiny=0&auto=0" data-description="来认识一下我们的艾丽西娅小姐。艾丽西娅是一只狐蝠，人们在澳大利亚的昆士兰救下了她。当时她被一辆车撞了，需要康复治疗。所幸事故没有对她造成实质性的伤害，四肢也能良好工作。艾丽西娅很快就能恢复健康啦！狐蝠以水果、花蜜还有花朵为食。但显然，她也很喜欢香蕉！" data-href="https://v.qq.com/iframe/player.html?vid=e0512o01mic&tiny=0&auto=0">
+		<div class="shawdow"></div>
+		<div class="video_con cf">
+			<span class="video_btn"></span>
+			<div class="video_info">
+				<h3>我是蝙蝠艾丽西娅，我爱吃香蕉</h3>
+			</div>
+		</div>
+	</a>
+</li>		
+<li class="hoverEffect">
+	<img src="http://image.nationalgeographic.com.cn/2017/1226/20171226103501354.jpg" width="312" height="173"/>							
+	<a class="hoverEffect_link" href="javascript:;" data-url="https://v.qq.com/iframe/player.html?vid=e05196z3usq&tiny=0&auto=0" data-description="你知道什么是流星雨吗？它到底会不会构成威胁？看过你就能都知道啦！" data-href="https://v.qq.com/iframe/player.html?vid=e05196z3usq&tiny=0&auto=0">
+		<div class="shawdow"></div>
+		<div class="video_con cf">
+			<span class="video_btn"></span>
+			<div class="video_info">
+				<h3>科普101：流星雨是什么？</h3>
+			</div>
+		</div>
+	</a>
+</li>		
+<li class="hoverEffect">
+	<img src="http://image.nationalgeographic.com.cn/2017/1226/20171226103615955.jpg" width="312" height="173"/>							
+	<a class="hoverEffect_link" href="javascript:;" data-url="https://v.qq.com/iframe/player.html?vid=s0519mjxahl&tiny=0&auto=0" data-description="最近，《纽约时报》所谓的“菲奥纳狂热”正横扫整个美国！让我们一起来看看菲奥纳的故事。" data-href="https://v.qq.com/iframe/player.html?vid=s0519mjxahl&tiny=0&auto=0">
+		<div class="shawdow"></div>
+		<div class="video_con cf">
+			<span class="video_btn"></span>
+			<div class="video_info">
+				<h3>河马宝宝菲奥纳的幸福生活</h3>
+			</div>
+		</div>
+	</a>
+</li>		
+<li class="hoverEffect">
+	<img src="http://image.nationalgeographic.com.cn/2017/1226/20171226103714378.jpg" width="312" height="173"/>							
+	<a class="hoverEffect_link" href="javascript:;" data-url="https://v.qq.com/iframe/player.html?vid=g05195vxpz0&tiny=0&auto=0" data-description="在东欧的一角，某座城市的地下遍布着曾经的矿场坑道。坑道里如今装满了葡萄美酒。游客不仅可以品尝美酒，还能在地下美酒大道上开车参观。" data-href="https://v.qq.com/iframe/player.html?vid=g05195vxpz0&tiny=0&auto=0">
+		<div class="shawdow"></div>
+		<div class="video_con cf">
+			<span class="video_btn"></span>
+			<div class="video_info">
+				<h3>去摩尔多瓦的地下迷宫里品酒吧！</h3>
+			</div>
+		</div>
+	</a>
+</li>		
+						</ul>
+					</div>
+				</div>
+				<script language="JavaScript" src="/statics/js/template2017/mod_video.js"></script>			
+			</div>
+			<div class="video_mess">
+				<a href=""><h3></h3></a>
+				<p></p>
+			</div>
+		</div>
+		<div class="sec_oneimg cf">
+			<img src="http://image.nationalgeographic.com.cn/2018/0122/20180122023524294.jpg">
+			<h2 class="title"><i class="ico"></i><span>每日一图</span></h2>
+			<a class="ico_more" href="/photography/photo_of_the_day/">查看全部<span>+</span></a>	
+			<div class="bg_shawdow"></div>
+			<a href="http://www.nationalgeographic.com.cn/photography/photo_of_the_day/5117.html" class="con">		
+				<div class="oneimg_mess cf">
+					<div>
+						<h3>今日收成</h3>
+					</div>				
+					<p>摄影：HG UN，你来掌镜</p>
+				</div>
+			</a>
+					</div>
+		
+		<!--广告开始-->
+		
+		<!--广告结束-->
+
+		<!--add or del magazine_act-->
+		<div class="sec_magazine magazine_act">		
+			<div class="con"><a class="a_link" href="###"><img alt="寻禅" src="http://image.nationalgeographic.com.cn/2017/1226/20171226122246114.jpg" /></a>
+<div class="text_wrapper">
+<div class="text_wrapper_con">
+<div class="disc">
+<div>&nbsp;</div>
+</div>
+<div class="text magazine_text">
+<div><span style="font-size:18px;">　　在古代，&ldquo;丝绸之路&rdquo;并不是一条真正意义上的路。就连&ldquo;丝绸之路&rdquo;这个词，也是迟至1877年才由德国人冯&middot;李希霍芬提出来。丝绸之路并非66 号公路那样，是一条轨迹明确、贯穿大陆的高速公路。正如比尔&middot;波特所说：&ldquo;它只是过路商队留下的动物骨骸和粪便所形成的小路。一场沙尘暴过后，小路消失得无影无踪，直到下一个商队再踩出另外一条小路。这些小路穿过世界上最荒凉的地方，从一个绿洲到达另一个绿洲。走这条路要穿越漫天的风沙和炙人的热浪，历经种种诡异，这是只有疯子和被流放者才走的畏途。我不知道自己算哪类人。&rdquo;</span><br />
+&nbsp;</div>
+<div><span style="font-size:18px;">　　几千年间，一队队骆驼商队在这漫长的商贸大道上行进，他们穿越崇山峻岭，跋山涉水，将中国的四大发明、丝绸、茶叶、瓷器等传送到了世界各地，也把世界各地的特色物产传入中国。除了商贸往来，这条路网也是全球著名的东西方宗教、艺术、语言和新技术交流融合的大动脉，在人类文明的发展史上扮演了重要的角色。虽然，在程度上古代的跨地域融合无法与如今的全球互联互通相提并论，但如果没有始于数千年前、长期持续的交流，没有&ldquo;丝绸之路&ldquo;把沿途的这些地方连成网络，我们生活的世界会大不一样。<br />
+<br />
+　　就这个意义而言，你会更加认可保罗的观点：丝绸之路与其说是一条路，不如说是一张网，是一个想法，是全球化的原型。隐藏于丝绸之路路网背后的是，只有通过商品的交换和流动，人们才能在遥远的聚居地之间建立联系，只有通过思想、艺术和人群本身的交流和互动，人类才能得到繁荣和发展。</span><br />
+&nbsp;</div>
+<div><span style="font-size:18px;">　　我们共同编织着世界&mdash;&mdash;或许这才是丝绸之路无穷魅力的来源。</span></div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div class="other"><a href="###"><img src="http://image.nationalgeographic.com.cn/2017/1226/20171226111426841.jpg" /></a>
+<div class="aside">
+<div>&nbsp;</div>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1260.html">消逝的豹王之国</a></span></p>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1261.html">美洲豹盗猎追凶</a></span></p>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1262.html">非洲科技新生代</a></span></p>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1263.html">丝路精灵</a></span></p>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1264.html">丹寨蜡染</a></span></p>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1265.html">流落异国， 少无可依</a></span></p>
+<p><span style="font-size:16px;"><a href="http://www.nationalgeographic.com.cn/magazine/2017/12/1266.html">灾后飞屋</a></span></p>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+<a class="btn" href="http://www.nationalgeographic.com.cn/magazine/2017/12/">阅读更多</a>		</div>
+</div>
+<script type="text/javascript">
+    seajs.use("index");
+</script>
+<div class="footer js_footer">
+		<div class="footer_top cf">
+			<ul>
+				<!--li><a href="http://m.nationalgeographic.com.cn/">移动版</a></li-->
+				<li><a href="http://www.nationalgeographic.com.cn/html/about_us/">关于我们</a></li>
+				<li><a href="http://www.nationalgeographic.com.cn/html/contact_us/">联系我们</a></li>
+				<li><a href="http://www.nationalgeographic.com.cn/html/links/">合作网站</a></li>
+			</ul>
+			<p class="cf">
+				<a class="wx s_wx" href="#"><img class="QR_code" title="QR code" src="/statics/images/ewm.jpg"/></a>
+				<a class="wb" href="https://weibo.com/geochannel"></a>
+				<a class="sd" href="https://weidian.com/?userid=984434868"></a>
+			</p>
+		</div>
+		<div class="footer_bottom">
+			<p class="copyright">2003-2018 国家地理中文网版权所有 NATIONAL GEOGRAPHIC All Rights Reserved.</p>
+			<p class="record">京ICP备14040104号-1 京公网安备11010502015207</p>
+		</div>
+	</div>
+<!--Baidu analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?f8f00157b9e7416724a33f0c8e9f6b9d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--Baidu analytics end-->
+</body>
+</html>
