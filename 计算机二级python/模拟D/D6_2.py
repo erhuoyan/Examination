@@ -1,5 +1,5 @@
 def getList(name):
-    f = open(name+"字符统计","r",encoding="utf-8")
+    f = open(name+"-字符统计.txt","r",encoding="utf-8")
     words = f.read().split(',')
     for i in range(len(words)):
         words[i] = words[i].split(':')[0]
