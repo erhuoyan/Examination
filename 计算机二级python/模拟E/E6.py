@@ -1,16 +1,17 @@
-fr = open('SunSign.csv',"r",encoding='utf-8')
+fo = open('SunSign.csv','r',encoding='utf-8')
 ls = []
-for i in fr:
-    ls.append(i.strip("\n").split(","))
-fr.close()
-n = input("请输入星座中文名称(例如，双子座):")
-while n != '':
+for i in fo:
+    ls.append(i.strip('\n').split(','))
+fo.close()
+
+while True:
+    n = input()
     flag = False
-    for i in ls:
-        if n == i[0]:
-            print("{}座的生日位于{}-{}之间".format(chr(eval(i[-1])),i[1],i[2]))
+    if n == 'exit':
+        break
+    for line in ls:
+        if line[0]==n:
+            print("{}座的生日位于{}-{}之间。".format(chr(eval(line[3])),line[1],line[2]))
             flag = True
-            break
     if flag == False:
-        print('输入星座名称有误！')
-    n = input("请输入星座中文名称(例如，双子座):")
+        print("输入星座名称有误！")
